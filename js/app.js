@@ -67,6 +67,6 @@ function renderWeather(data){
 }
 
   $(function(){  //Funzione anonima
-    showSection("loading"); //Chiamata di funzione con passaggio di un parametro.
+    showSection("loading");   //Chiamata di funzione con passaggio di un parametro.
     getPosition();
 });
