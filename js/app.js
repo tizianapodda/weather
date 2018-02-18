@@ -48,6 +48,7 @@ function renderWeather(data){
         var date = new Date(data.list[i].dt*1000); //l'API ritorna la data in unix cioè in secondi dal 1 gennaio 1970, creando un oggetto della classe "Date"
         var day = ["Sunday", "Monday", "Tuensday", "Wednesday", "Thursday", "Friday", "Saturday"][date.getDay()];
 
+        //Se i è diverso da zero clono il container
         if (i != 0){
           container = container.clone().appendTo("#day-list");
         }
