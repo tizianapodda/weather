@@ -1,10 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Weather web app</title>
-  </head>
-  <body>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/stili.css" />
+</head>
+<body>
+    <section id="loading" style="display: none">
+        <div class="progress" id="progress-bar">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">Loading</div>
+        </div>
+    </section>
 
-  </body>
+    <section id="content">
+        <div class="row">
+            <div class="col-md-6" id="today-weather">
+                <div class="row">
+                    <div id="primary-data">
+                        <div id="today-icon">
+                            <img />
+                        </div>
+
+                        <ul>
+                            <li><p id="day"></p></li>
+                            <li><p id="city"></p></li>
+                            <li><p id="weather"></p></li>
+                        </ul>
+                    </div>
+                    
+                    <div id="secondary-data">
+                        <ul>
+                            <li>
+                                <p id="temperature">Temperature: <b></b></p>
+                            </li>
+                            <li>
+                                <p id="temperature-min">Min: <b></b></p>
+                            </li>
+                            <li>
+                                <p id="temperature-max">Max: <b></b></p>
+                            </li>
+                            <li>
+                                <p id="humidity">Humidity: <b></b></p>
+                            </li>
+                            <li>
+                                <p id="wind">Wind: <b></b></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" id="day-of-week">
+                <div class="row">
+                    <div class="col-12" id="day-list"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 </html>
