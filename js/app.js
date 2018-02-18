@@ -66,7 +66,7 @@ function renderWeather(data){
     $("#content > .row > #today-weather > .row > div").addClass("col-md-6 offset-md-3 col-8 offset-2");
 }
 
-  $(function(){
+  $(function(){  //Funzione anonima
     showSection("loading"); //Chiamata di funzione con passaggio di un parametro.
     getPosition();
 });
