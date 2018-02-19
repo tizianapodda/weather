@@ -59,6 +59,7 @@ function renderWeather(data){
         // alla variabile day associo il giorno che mi ritorna date.getDay
         //api ritorna un array che in posizione 0 contiene sempre le previsioni di oggi
 
+        //Se i è diverso da zero clono il container
         if (i != 0){
           container = container.clone().appendTo("#day-list");
         }
@@ -78,6 +79,6 @@ function renderWeather(data){
 }
 
   $(function(){  //Funzione anonima
-    showSection("loading");   //Chiamata di funzione con passaggio di un parametro.
-    getPosition();
+    showSection("loading"); //Chiamata di funzione con passaggio di un parametro.
+    getPosition(); //Richiamiamo getPosition
 });
